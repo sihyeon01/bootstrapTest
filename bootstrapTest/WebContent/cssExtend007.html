@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>x축 애니메이션</title>
+<style>
+	@keyframes test{
+		from {
+			background:yellow;
+			left:0px;
+		}
+		to	{
+			background:green;
+			left:500px;
+		}
+	}
+	div {
+		width:100px;
+		height:100px;
+		position:relative;
+		animation-name:test;
+		animation-duration:3s;
+		animation-fill-mode:both;  /* 마지막에 멈추기*/
+	}
+</style>
+</head>
+<body>
+	<div>animation</div>
+</body>
+</html>
