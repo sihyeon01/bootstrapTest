@@ -23,7 +23,7 @@ $(function(){
 		var addImg = (clickCnt - 1) == 0? "" : (":gt(" + (images.length * (clickCnt - 1) -1)) + ")";
 		$(".picture>div" + addImg).each(function(){
 			$(this).imagesLoaded()
-			.alwayss(function(){
+			.always(function(){
 				console.log("always");
 			})
 			.done(function(){
